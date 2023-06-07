@@ -29,7 +29,7 @@
           >
           <ul class="header-list reset-list">
             <li class="header-item">
-              <a class="header-item-link reset-link" href="./index.html"
+              <a class="header-item-link reset-link current" href="./index.html"
                 >Studio</a
               >
             </li>
@@ -67,7 +67,9 @@
       <section class="hero">
         <div class="container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
-          <button type="button" class="hero-btn">Order Service</button>
+          <button type="button" class="hero-btn" data-modal-open>
+            Order Service
+          </button>
         </div>
       </section>
       <section class="Features section">
@@ -534,5 +536,15 @@
         </div>
       </div>
     </footer>
+    <div class="is-hidden backdrop" data-modal>
+      <div class="modal">
+        <button class="modal-btn" type="button" data-modal-close>
+          <svg class="modal-svg" width="8" height="8">
+            <use href="./images/icons.svg#icon-close-black"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
